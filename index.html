@@ -41,6 +41,10 @@ h2{font-size:clamp(2.1rem,4.4vw,3.1rem)}
 h2 em{font-style:italic;color:var(--green)}
 .head{text-align:center;max-width:640px;margin:0 auto 52px}
 .head p{color:var(--muted);margin-top:14px}
+.head-wide{max-width:780px}
+.head p strong{font-weight:500;color:var(--green-deep)}
+.head .head-note{font-family:var(--serif);font-style:italic;font-size:1.3rem;line-height:1.5;color:var(--text);margin-top:22px;padding-top:20px;position:relative}
+.head .head-note::before{content:"";position:absolute;top:0;left:50%;width:48px;height:1px;background:var(--clay);transform:translateX(-50%)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 30px;border-radius:999px;font-family:var(--sans);font-weight:500;font-size:1rem;letter-spacing:.02em;transition:transform .25s,box-shadow .25s,background .25s,color .25s}
 .btn svg{width:20px;height:20px;flex-shrink:0}
 .btn-primary{background:var(--green);color:#fff;box-shadow:0 12px 28px rgba(63,138,124,.25)}
@@ -138,7 +142,7 @@ nav.scrolled{background:rgba(252,250,246,.95);backdrop-filter:blur(10px);box-sha
 
 /* PASOS */
 #pasos{background:var(--sand);padding:84px 0}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:960px;margin:0 auto}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:1040px;margin:0 auto;align-items:start}
 .step{text-align:center;padding:10px 16px}
 .step .n{font-family:var(--serif);font-size:3rem;color:var(--clay);line-height:1;font-weight:500}
 .step h3{font-size:1.45rem;margin:10px 0 6px}
@@ -298,13 +302,13 @@ footer .credit a{color:var(--clay)}
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V11"/><path d="M12 12c0-5 3.3-8.3 8.3-9 0 5-3.3 8.7-8.3 9z"/><path d="M12 15c0-4.2-2.9-7.1-7.5-7.9 0 4.2 2.9 7.5 7.5 7.9z"/></svg></div>
         <span class="tag">¿Qué es?</span>
         <h3>Bioexistencia Consciente</h3>
-        <p>Es una mirada desarrollada por el Instituto Humano Puente que entiende cada síntoma —en el cuerpo, en la economía o en los vínculos— como un mensaje. Busca su origen en emociones y conflictos no expresados para tomar consciencia de ellos y transformarlos.</p>
+        <p>Es un centro de consciencia y de salud. Es una corriente de base biológica, espiritual, filosófica y evolutiva, creada por Pablo Almazán y Lucrecia Bianchi en el año 2011, con la finalidad de acompañar al Ser Humano en su despertar de consciencia, promoviendo una vida más plena, libre y coherente.</p>
       </div>
       <div class="que rv">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.2"/></svg></div>
         <span class="tag">¿Qué es?</span>
         <h3>Tutora YOBB</h3>
-        <p>YOBB (<em>Your Own Big Bang</em>) es un programa de mentorías de autoconocimiento creado por Pablo Almazán, del Instituto Humano Puente. Como tutora, acompaño a quienes participan a integrar lo trabajado en cada encuentro y llevarlo a su vida cotidiana.</p>
+        <p>Es una propuesta de acompañamiento orientada al desarrollo integral de personas, líderes, emprendedores y empresas. Una invitación a expandir la mirada, potenciar capacidades y descubrir nuevas posibilidades a través de herramientas que favorecen el crecimiento personal y profesional, la productividad, la gestión financiera, la toma de decisiones y el logro de objetivos.</p>
       </div>
     </div>
   </div>
@@ -312,10 +316,11 @@ footer .credit a{color:var(--clay)}
 
 <section id="areas">
   <div class="wrap">
-    <div class="head rv">
+    <div class="head head-wide rv">
       <span class="tag">Acompañamiento</span>
       <h2>Lo que <em>te acompaño</em> a sanar</h2>
-      <p>Cada síntoma trae un mensaje. Juntas y juntos buscamos su origen para que puedas vivir con más paz.</p>
+      <p>Te acompaño a descubrir y transformar aquello que condiciona tu vida explorando la información inconsciente desde la <strong>Bioexistencia Consciente</strong>, o a expandir tu mirada incorporando nuevas herramientas y recursos que potencien tus capacidades, te permitan tomar nuevas decisiones y alcanzar diferentes resultados a través de <strong>Tutorías YOBB</strong>. Dos propuestas independientes, un mismo propósito: abrir nuevas posibilidades para tu vida.</p>
+      <p class="head-note">El verdadero cambio no es inmediato: es un proceso de autodescubrimiento y evolución que se construye a largo plazo. Una inversión en la posibilidad de vivir en coherencia con tu propia naturaleza.</p>
     </div>
     <div class="areas-grid">
       <div class="area rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 11c0 5.6-7 10-7 10z"/><path d="M8 11.5h2l1-2 2 4 1-2h2"/></svg></div><h3>Síntomas físicos</h3></div>
@@ -361,9 +366,9 @@ footer .credit a{color:var(--clay)}
       <h2>¿Cómo <em>empezamos</em>?</h2>
     </div>
     <div class="steps">
-      <div class="step rv"><div class="n">01</div><h3>Escribime</h3><p>Contame por WhatsApp qué te está pasando o qué te gustaría trabajar.</p></div>
-      <div class="step rv"><div class="n">02</div><h3>Coordinamos</h3><p>Acordamos juntos el día y el horario de tu consulta.</p></div>
-      <div class="step rv"><div class="n">03</div><h3>Comenzamos</h3><p>Iniciamos el proceso de escucha para descubrir el origen de tu síntoma.</p></div>
+      <div class="step rv"><div class="n">01</div><h3>Escribime</h3><p>Contame brevemente qué situación estás atravesando o qué te gustaría sanar y transformar.</p></div>
+      <div class="step rv"><div class="n">02</div><h3>Coordinamos</h3><p>Acordamos día y horario para realizar nuestro encuentro online.</p></div>
+      <div class="step rv"><div class="n">03</div><h3>Comenzamos</h3><p>Damos inicio a un recorrido de autodescubrimiento para explorar aquello que condiciona tu presente, ampliar tu mirada e incorporar nuevas herramientas y perspectivas que te permitan descubrir otras maneras de experimentar, elegir y vivir tu vida.</p></div>
     </div>
   </div>
 </section>
